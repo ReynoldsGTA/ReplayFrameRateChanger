@@ -1,6 +1,5 @@
 #include "plugin.h"
 #include "CHud.h"
-#include "CRideAnimData.h"
 #include "CBike.h"
 #include "tBikeHandlingData.h"
 
@@ -18,13 +17,6 @@ bool checkHandling() {
 			noMods = noMods && (handling->m_fMass == 400.0);
 			noMods = noMods && (handling->m_fTurnMass == 200.0);
 			noMods = noMods && (handling->m_fDragMult == 4.0);
-			/*
-			noMods = noMods && (bHandling->m_fLeanFwdCOM == 0.25);
-			noMods = noMods && (bHandling->m_fLeanFwdForce == 0.10);
-			noMods = noMods && (bHandling->m_fLeanBakCOM == 0.30);
-			noMods = noMods && (bHandling->m_fLeanBakForce == 0.10);
-			noMods = noMods && (bHandling->m_fMaxLean == 55.0);
-			*/
 		}
 
 		if (!noMods) {
